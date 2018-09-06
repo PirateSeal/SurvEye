@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<header class="row">
+	<div class="col-lg-12">
+		<h2>Mes sondages</h2>
+	</div>
+</header>
+<div class="row">
+<form class="form-group col-md-3 col-md-offset-2" action="req_traiter_sondage" method="GET">
+    Mes sondages : <br>
+    <select class="form-control" name="sondage">
+        {liste}
+    </select>
+	<p>
+    <input type="hidden" value="{id}" name="id">
+    <input class="btn" type="submit" name="bouton" value="Voir">
+	<input class="btn" type="submit" name="bouton" value="URL"><br>
+    <input class="btn" type="submit" name="bouton" value="Ouvrir">
+    <input class="btn" type="submit" name="bouton" value="Fermer"><br>
+    <input class="btn" type="submit" name="bouton" value="Supprimer">
+</form>
+<form class="form-group col-md-3 col-md-offset-2" action="req_traiter_sondage" method="GET">
+    <input type="hidden" value="{id}" name="id">
+    Sondages disponibles : <br>
+    <select class="form-control" name="sondage">
+        {liste2}
+    </select>
+	<p>
+    <input class="btn" type="submit" name="bouton" value="Voir">
+    <input class="btn" type="submit" name="bouton" value="Supprimer">
+</form>
+</form>
+</div>
+<div class="row">
+<form class="col-lg-12" action="req_retour_accueil_membre" method="GET">
+    Retour à l'accueil <br>
+    <input type="hidden" name="id" value="{id}">
+    <input class="btn btn-primary"type="submit" name="bouton" value="Accueil">
+</form>
+</div>
+</html>

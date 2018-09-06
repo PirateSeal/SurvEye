@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SurvEye</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+		<header class="row">
+		<div class="col-lg-12">
+		<h2><center>SurvEye</center></h2>
+		</div>
+		</header>
+		<div class="row col-md-offset-1 col-md-11">
+		Bonjour, {id}
+		</div>
+		<div class="row">
+		<div class="form-group col-md-3 col-md-offset-2">
+		
+			<form  action="/req_consulter_sondages" method="GET">
+				<button class="btn" name="action" value="consulter">Mes sondages</button>
+				<input type="hidden" name="id" value="{id}">
+			</form>
+		</div>
+		<div class="form-group col-md-3 col-md-offset-2">
+
+			<form class="btn" action="/req_creer_un_sondage" method="GET">
+				<button class="btn"name="action" value="creer">Créer un sondage</button>
+				<input type="hidden" name="id" value="{id}">
+			</form>
+		</div>
+		</div>
+		<div class="row">
+			<form action="/req_deconnexion" method="GET">
+				<button name="action" value="deconnexion">Déconnexion</button>
+			</form>
+		</div>
+		</p>
+		<form action="/req_preferences" method="GET">
+			<button name="action" value="preferences">Préférences</button>
+			<input type="hidden" name="id" value="{id}">
+		</form>
+	</body>
+</html>

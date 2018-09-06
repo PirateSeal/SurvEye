@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Résultats du sondage : {sondage}</title>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+		{message}
+        {results}
+        <div id="myDiv"></div>
+        <br>
+        <p>
+            <form action="req_consulter_sondages" method="GET">Retour à mes sondages <br>
+                <input type="hidden" name="id" value="{id}">
+                <input type="submit" name="bouton" value="mes sondages">
+            </form>
+        </p>
+        
+
+    </body>
+    
+
+</html>

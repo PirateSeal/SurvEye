@@ -1,0 +1,39 @@
+colonne fonctionalités où tout est hiérarchisé
+
+Trouver un nom
+
+Inscription / connexion
+
+sondages avec ID (random)
+
+Core {
+ 	voir les sondages (connecté)
+	créer un sondage
+	répondre
+	ouvrir / clore (manuellement ou automatique)
+	consulter les résultats }
+
+features {
+	sondage tuto
+	faire un brouillon
+	consulter un historique
+	sondage visible ou non (privé publique)
+	liste de sondages
+	page profil
+	personnalisation
+	créer un QCM ?
+	messagerie
+	commentaires / avis
+	note du résultat
+	F.A.Q.
+	suggestions aux devs
+	liste de tags pour les sondages
+	les regrouper par tags lorsqu'on les affiche
+	ajouter une réponse
+	Opter pour thème n°1 si plusieurs options se pointent }
+
+un fichier membre
+
+un fichier profil (nom profil / sondages invités / sondages créés)
+
+un fichier par sondage (nom / questions / réponses / qui a voté / réponses des votants / état)

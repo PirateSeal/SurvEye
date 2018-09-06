@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body>
+	<h1> Confirmation !</h1>
+	<h3>le sondage {sondage} a bien été {confirm}</h3>
+	<p>
+	<h3>Voici le lien de votre sondage :
+	<br>{url}</h3><p>
+	Vous pouvez retrouver le lien dans "Mes sondages".
+	<form action="req_retour_accueil_membre" method="GET">
+	    Retour à l'accueil <br>
+		<input type="hidden" name="id" value="{id}">
+		<input type="submit" name="bouton" value="Accueil">
+	</form>
+</body>
+</html>

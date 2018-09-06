@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="container">
+            <header class="row">
+                <div class="col-lg-12">
+                    <h2>BackOffice SurvEye</h2>
+                </div>
+            </header>
+
+            <div class="row">
+                <form class="form-group col-md-3 col-md-offset-2" action="req_traiter_web" method="GET">
+                    Sondages du site : <br>
+                    <select class="form-control" name="sondage">
+                        {liste}
+                    </select>
+                    <input class="btn" type="submit" name="survey" value="Supprimer">
+                </form>
+
+                <form class="form-group col-md-3 col-md-offset-2" action="req_traiter_web" method="GET">
+                    Comptes du site <br>
+                    <select class="form-control" name="membres">
+                        {liste2}
+                    </select>
+                    <input class="btn" type="submit" name="member" value="Supprimer">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

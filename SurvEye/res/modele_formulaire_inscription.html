@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<h2>Formulaire de création de compte</h2>
+
+{erreur}
+<p/>
+
+<form action="/req_inscrire" method="GET">
+    <label>Pseudo : </label><input type="text" name="id" value="{id}">
+    <br/>
+    <label>Password : </label><input type="password" name="password" value="">
+    <br/>
+    <label>Confirm password : </label><input type="password" name="confirm" value="">
+    <br/>
+	{hidden}
+    <button name="action" value="creer">Créer compte</button>
+	
+</form>
+    <form action="/req_retour_accueil" method="GET">
+	<input type="submit" name="revenir" value="Page d'accueil">
+	{hidden}
+</form>
+	
+</html>

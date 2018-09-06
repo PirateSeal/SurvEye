@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <script src="./req/application.js"></script>
+    <link rel="stylesheet" type="text/css" href="./res/application.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="main">
+        <img class="img-responsive" src="./Logo_1.png">
+        
+        <nav class="navbar navbar-fixed-top">
+            {script}
+        </nav>
+
+        <h1>Créez votre sondage !</h1>
+
+        <div id="mySidepannel" class="sidepannel">
+            <button id="closer">X</button>
+            {histo}
+        </div>
+
+        <div class="questionnaire">
+            <h3>{question}</h3>
+
+            <form action="/req_editer_sondage" method="GET">
+                <input type="hidden" name="id" value="{id}">
+                <input type="hidden" name="numero" value="{indice}">
+                <input type="text" id="q" value="{q}" name="q">{erreurQ}<br>
+                <br>
+                <p>
+                    <input type="text" value="{0}" name="0">{erreurR}<br>
+                    <input type="text" value="{1}" name="1"><br>
+                    <input type="text" value="{2}" name="2"><br>
+                    <input type="text" value="{3}" name="3"><br>
+                    <input type="text" value="{4}" name="4"><br>
+                    <input type="text" value="{5}" name="5"><br>
+                    <input type="text" value="{6}" name="6"><br>
+                    <input type="text" value="{7}" name="7"><br>
+                    <input type="text" value="{8}" name="8"><br>
+                    <input type="text" value="{9}" name="9"><br>
+                    <p>
+                        <input class="btn btn-outline-primary" type="submit" name="p" value="Valider"> {suppress}
+                    </p>
+                    <input class="btn btn-outline-success" type="submit" name="p" value="Valider sondage">
+                </p>
+            </form>
+
+            <form action="req_retour_accueil_membre" method="GET">
+                <input type="submit" class="btn btn-outline-danger" name="retour" value="Abandon">
+                <input type="hidden" name="id" value="{id}">
+            </form>            
+        </div>
+    </div>
+</body>
+
+</html>
