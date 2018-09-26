@@ -1,0 +1,10 @@
+--------------------------------
+SurvEye est une application qui permet à l'utilisateur de créer et partager des sondages.
+--------------------------------
+Mais encore, SurvEye vous permet de partager vos sondages ou de les rendre publiques.
+
+Invitez des personnes à y répondre ou rendez le publique. 
+
+Consultez les résultats immédiatement.
+
+Ou alors répondez simplement aux autres.

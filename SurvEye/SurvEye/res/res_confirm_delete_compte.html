@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body>
+	<h1> Voulez-vous vraiment supprimer {delete} ?</h1>
+	<form action="req_delete_compte" method="GET">
+		<input type="hidden" value="{id}" name="id">
+		<input type="submit" name="delete" value="oui">
+		<input type="submit" name="delete" value="non">
+	</form>
+</body>
+</html>

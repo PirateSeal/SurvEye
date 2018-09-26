@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+<form action="/req_valider_reponse" method="GET">
+    <input type="hidden" name="id" value="{id}">
+    {hidden}
+	{questions}
+    <br>
+    <input type="submit" name="bouton" value="Valider">
+
+</form>
+    
+<form action="req_consulter_sondages" method="GET">
+	<input type="hidden" name="id" value="{id}">
+	<input type="submit" name="bouton" value="annuler">
+</form>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+</head>
+
+<body>
+	<center><h2>Mes préférences</h2></center>
+	Changement de mot de passe : <br>
+	<form action="/req_nouveau_mdp" method="GET">
+		Nouveau mot de passe: <input type="password" name="mdp" value=""><br>
+		Confirmer mot de passe:<input type="password" name="mdp2" value="">{erreur}<br>
+		<input type="submit" name="valider" value="Changer mot de passe">
+		<input type="hidden" name="id" value={id}><p>
+	</form>
+	    <form action="req_retour_accueil_membre" method="GET">
+		Retour à l'accueil <br>
+		<input type="hidden" name="id" value="{id}">
+		<input type="submit" name="bouton" value="Accueil">
+		</form>
+</body>
+</html>
